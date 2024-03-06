@@ -1,0 +1,105 @@
+.App{
+  display : flex;
+  flex-direction : column;
+  align-items : center;
+  background: url("Studentdb.png") no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+.App-container{
+  color: rgb(0, 0, 0);
+  display : flex;
+  backdrop-filter: blur(50px);
+  flex-direction : column;
+  align-items : center;
+  width : 50%;
+  border: 5px solid black;
+  margin : 1px;
+  padding : 10px 10px;
+  box-shadow: 0 25px 50px -12px rgb(0, 0, 0);
+}
+
+.App-container input {
+  /*height: 30px;*/
+  width : 100%;
+  margin : 10px;
+  padding : 10px;
+  border : 1px solid black;
+  width : 70%;
+  /* font-weight: bold; */
+}
+
+.App-container button {
+  margin: 10px 0 10px 0;
+  padding : 10px;
+  border : 1px solid black;
+  width : 40%;
+  background-color: blueviolet;
+  color: antiquewhite;
+}
+
+.show{
+  margin: 10px 0 10px 0;
+  margin-top: 1cm;
+  margin-bottom: 4cm;
+  padding : 10px;
+  border : 1px solid black;
+  width : 40%;
+  background-color: green;
+  color: rgb(240, 233, 223);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.show:hover {
+  border: 2px solid #000000; 
+  cursor: pointer;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.904);
+} 
+
+.btn {
+  background-color: #27005D;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  border: 2px solid #000000; 
+  cursor: pointer;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.904);
+}
+
+.display{
+  background-color: azure;
+  color: rgb(8, 4, 62);
+  font-weight: bolder;
+  display: table;
+  width: 90%;
+  border-collapse: collapse;
+  border: 1px solid white;
+  box-shadow: 0 50px 100px -12px rgba(0, 0, 0, 0.904);
+}
+
+.studentdet{
+  display: table-row;
+}
+
+.studentdet>span {
+  display: table-cell;
+  padding: 15px;
+  border-bottom: 1px solid #000;
+}
+.warning-popup {
+  background-color: #ff9999; /* Light red background */
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Shadow effect */
+  z-index: 999;
+}
+.warning-popup p {
+  margin: 0;
+  font-size: 16px;
+  font-weight: bolder;
+  color: #800000; /* Dark red text color */
+}
