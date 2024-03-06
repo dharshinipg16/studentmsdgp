@@ -64,8 +64,8 @@ app.delete("/delete/:id", (req, res) => {
   });
 });
 
-const PORT=process.env.PORT||3000;
+const port1=process.env.PORT||3000;
 
-app.listen(PORT, () => {
+app.listen(port1, () => {
   console.log("Server is running on port 3000");
 });
